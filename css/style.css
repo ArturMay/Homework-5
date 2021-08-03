@@ -9,12 +9,19 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+  color: #363636;
 }
 
 a {
   text-decoration: none;
   font-size: 16px;
   color: #363636;
+  font-weight: bold;
 }
 
 a:hover {
@@ -22,8 +29,30 @@ a:hover {
     transition: all 0.3s ease-in-out;
 }
 
+.medical-service-button {
+  display: flex;
+  font-size: 30px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #0078aa;
+  margin-right: 20px;
+}
+
+button:hover {
+  background-color: #fff;
+  border: 1px solid #0078aa;
+  color: #0078aa;
+  transition: all 0.3s ease-in-out;
+}
+
 .container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   border: 1px solid greenyellow; 
@@ -31,9 +60,20 @@ a:hover {
 
 /* Header */
 
+header {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
 .header-wrap {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-color: khaki;
 }
 
 .nav ul {
@@ -47,5 +87,22 @@ a:hover {
 
 /* Main 
 Section hero */
+
+.section-hero-wrapper {
+  display: flex;
+  align-items: center;
+  background-image: url("../img/lady.jpg");
+  background-size: cover;
+  min-height: 100vh;
+  background-color: grey;
+}
+
+.hero {
+  max-width: 500px;
+}
+
+.medical-button-holder {
+  display: flex;
+}
 
 
