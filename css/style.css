@@ -10,6 +10,37 @@
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
+  padding: 0;
+}
+
+main {
+  position: relative;
+}
+
+img {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 100%;
+	height: auto;
+	border: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* typography-settings  */
+
+h1,h2,h3,h4,h5,h6,p {
+	margin: 0;
 }
 
 h1 {
@@ -17,12 +48,32 @@ h1 {
   color: #363636;
 }
 
+h2 {
+  font-size: 26px;
+  color: #363636;
+}
+
+h4 {
+  font-size: 14px;
+  color: #363636;
+}
+
+p {
+  font-size: 14px;
+  color: #363636;
+  margin: 15px 0;
+}
+
 a {
+  display: block;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
   color: #363636;
   font-weight: bold;
+  margin: 15px 0;
 }
+
+/* button-styles */
 
 a:hover {
     color: #0078aa;
@@ -44,12 +95,32 @@ a:hover {
   margin-right: 20px;
 }
 
+.up-to-top-button {
+  display: flex;
+  font-size: 30px;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: #0078aa;
+  margin-right: 20px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
 button:hover {
   background-color: #fff;
   border: 1px solid #0078aa;
   color: #0078aa;
   transition: all 0.3s ease-in-out;
 }
+
+/* Header */
 
 .container {
   max-width: 1200px;
@@ -58,11 +129,10 @@ button:hover {
   border: 1px solid greenyellow; 
 }
 
-/* Header */
-
 header {
   display: block;
   position: fixed;
+  z-index: 5;
   left: 0;
   top: 0;
   width: 100%;
@@ -83,6 +153,7 @@ header {
 
 .nav a {
   padding-left: 10px;
+  
 }
 
 /* Main 
@@ -93,16 +164,45 @@ Section hero */
   align-items: center;
   background-image: url("../img/lady.jpg");
   background-size: cover;
-  min-height: 100vh;
+  background-position: 70%;
+  min-height: 630px;
   background-color: grey;
+  padding-top: 50px;
+  margin-bottom: 50px;
 }
 
 .hero {
-  max-width: 500px;
+  max-width: 450px;
 }
 
 .medical-button-holder {
   display: flex;
 }
 
+/* Section about */
+
+.about-section-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: 630px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 -15px;
+}
+
+.image-holder {
+  width: 60%;
+  padding: 0 15px;
+}
+
+.about-holder {
+  width: 40%;
+  padding: 0 15px;
+}
+
+.about {
+  width: 350px;
+}
 
