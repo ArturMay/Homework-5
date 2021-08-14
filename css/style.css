@@ -7,6 +7,16 @@
 
 /* Settings */
 
+html {
+  scroll-behavior: smooth;
+}
+
+#wrapper {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   margin: 0;
@@ -48,6 +58,12 @@ h1 {
   color: #363636;
 }
 
+@media screen and (max-width: 1279px){
+  h1 {
+    font-size: 26px;
+  }
+}
+
 h2 {
   font-size: 26px;
   color: #363636;
@@ -73,14 +89,21 @@ a {
   margin: 15px 0;
 }
 
-/* button-styles */
-
-a:hover {
-    color: #0078aa;
-    transition: all 0.3s ease-in-out;
+@media screen and (max-width: 767px) {
+  a {
+    font-size: 12px;
+    margin: 8px 0;
+  }
 }
 
-.medical-service-button {
+a:hover {
+  color: #0078aa;
+  transition: all 0.3s ease-in-out;
+}
+
+/* button-styles */
+
+.button {
   display: flex;
   font-size: 30px;
   cursor: pointer;
@@ -93,21 +116,15 @@ a:hover {
   border: none;
   background-color: #0078aa;
   margin-right: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .button {
+    margin: 0;
+  }
 }
 
 .up-to-top-button {
-  display: flex;
-  font-size: 30px;
-  cursor: pointer;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border: none;
-  background-color: #0078aa;
-  margin-right: 20px;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -141,9 +158,16 @@ header {
 
 .header-wrap {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: khaki;
+}
+
+@media screen and (max-width: 767px) {
+  .header-wrap {
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 .nav ul {
@@ -153,7 +177,12 @@ header {
 
 .nav a {
   padding-left: 10px;
-  
+}
+
+@media screen and (max-width: 767px) {
+  .nav a {
+    padding-left: 5px;
+  }
 }
 
 /* Main 
@@ -167,16 +196,48 @@ Section hero */
   background-position: 70%;
   min-height: 630px;
   background-color: grey;
-  padding-top: 50px;
-  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 1279px){
+  .section-hero-wrapper {
+    background-position: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .section-hero-wrapper {
+    background-position: 55%;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+  }
 }
 
 .hero {
   max-width: 450px;
 }
 
-.medical-button-holder {
+@media screen and (max-width: 1279px) {
+  .hero {
+    max-width: 330px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero {
+    max-width: 80%;
+    padding-top: 100px;
+  }
+}
+
+.button-holder {
   display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .button-holder {
+    justify-content: space-between;
+  }
 }
 
 /* Section about */
@@ -192,17 +253,45 @@ Section hero */
   margin: 0 -15px;
 }
 
+@media screen and (max-width: 767px) {
+  .about-section-wrapper {
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
 .image-holder {
-  width: 60%;
+  width: 50%;
   padding: 0 15px;
 }
 
+@media screen and (max-width: 767px) {
+  .image-holder {
+    width: 100%;
+    padding: 0;
+  }
+  
+}
+
 .about-holder {
-  width: 40%;
+  width: 50%;
   padding: 0 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .about-holder {
+    width: 100%;
+  }
 }
 
 .about {
   width: 350px;
 }
 
+@media screen and (max-width: 767px) {
+  .about {
+    width: 100%;
+  }
+}

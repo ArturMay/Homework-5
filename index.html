@@ -13,11 +13,12 @@
   <title>Responsive</title>
 </head>
 <body>
+  <div id="wrapper">
     <header>
       <div class="container">
         <div class="header-wrap">
           <div class="logo">
-            <a href="">
+            <a href="#">
               <img src="img/logo.png" alt="logo">
             </a>
           </div>
@@ -27,7 +28,7 @@
                 <a href="#">HOME</a>
               </li>
               <li>
-                <a href="#">ABOUT</a>
+                <a href="#section about">ABOUT</a>
               </li>
               <li>
                 <a href="#">SERVICES</a>
@@ -48,15 +49,15 @@
           <div class="section-hero-wrapper" id="hero-section">
               <section class="hero">
                 <h1>Proffesional Developers Health Care</h1>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates qui, neque minima quibusdam, necessitatibus id fuga, numquam labore quidem consectetur sint quasi maxime vitae sit quia ipsa porro! Vel, deserunt?</p>
-                <div class="medical-button-holder">
-                  <button class="medical-service-button">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates qui, neque minima quibusdam, necessitatibus id fuga</p>
+                <div class="button-holder">
+                  <button class="button">
                     <i class="fas fa-heartbeat"></i>
                   </button>
-                  <button class="medical-service-button">
+                  <button class="button">
                     <i class="fas fa-first-aid"></i>
                   </button>
-                  <button class="medical-service-button">
+                  <button class="button">
                     <i class="fas fa-stethoscope"></i>
                   </button>
                 </div>
@@ -66,23 +67,21 @@
             <div class="image-holder">
               <img src="img/tools.png" alt="tools">
             </div>
-            <div class="about-holder">
+            <div class="about-holder" id="section about">
               <section class="about">
                 <h2>About Clinic</h2>
-                <a href="">PROFESSIONAL CARE</a>
-                <h4>Medical Consulting</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi maxime esse velit tempore nobis nisi blanditiis maiores inventore</p>
-                <h4>Medical Consulting</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi maxime esse velit tempore nobis nisi blanditiis maiores inventore</p>
-                <h4>Medical Consulting</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi maxime esse velit tempore nobis nisi blanditiis maiores inventore</p>
-                <h4>Medical Consulting</h4>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi maxime esse velit tempore nobis nisi blanditiis maiores inventore</p>
+                <a href="#hero-section">PROFESSIONAL CARE</a>
+                 <h4><a href="#"><i class="fas fa-long-arrow-alt-right"></i> Medical Consulting</a></h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi maxime esse velit tempore nobis</p>
+                <h4><a href="#"><i class="fas fa-long-arrow-alt-right"></i> Laboratory analysis</a></h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi maxime esse velit tempore nobis</p>
+                <h4><a href="#"><i class="fas fa-long-arrow-alt-right"></i> Diagnostics</a></h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi maxime esse velit tempore nobis</p>
               </section>
             </div>
           </div>
             <form action="#hero-section" method="get">
-              <button class="up-to-top-button">
+              <button class="button up-to-top-button">
                 <i class="fas fa-long-arrow-alt-up"></i>
               </button>
             </form>
@@ -90,5 +89,6 @@
     </main>
     <footer>
     </footer>
+  </div>
 </body>
 </html>
