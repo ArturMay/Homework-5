@@ -47,6 +47,10 @@ li {
   border: 0;
 }
 
+div, article {
+  box-sizing: border-box;
+}
+
 /* typography-settings  */
 
 h1,h2,h3,h4,h5,h6,p {
@@ -189,12 +193,10 @@ header {
 Section hero */
 
 .section-hero-wrapper {
-  display: flex;
   align-items: center;
   background-image: url("../img/lady.jpg");
   background-size: cover;
   background-position: 70%;
-  min-height: 630px;
   background-color: grey;
 }
 
@@ -214,7 +216,12 @@ Section hero */
 }
 
 .hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   max-width: 450px;
+  min-height: 630px;
 }
 
 @media screen and (max-width: 1279px) {
@@ -295,3 +302,35 @@ Section hero */
     width: 100%;
   }
 }
+
+/* Section services */
+
+.services {
+  background-image: url("../img/services_bg.jpg");
+  background-size: cover;
+  background-color: aqua;
+  text-align: center;
+}
+
+.services-holder {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 -15px;
+  padding: 20px 0;
+}
+
+.service-card {
+  width: 33.33%;
+  text-align: left;
+  padding: 0 15px;
+  margin: 15px 0;
+}
+
+.content-holder {
+  background-color: #fff;
+  min-height: 240px;
+  padding: 15px;
+  overflow: hidden;
+}
+
